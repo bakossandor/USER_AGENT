@@ -1,0 +1,25 @@
+{
+  "name": "user_agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakossandor/USER_AGENT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakossandor/USER_AGENT/issues"
+  },
+  "homepage": "https://github.com/bakossandor/USER_AGENT#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-useragent": "^1.0.8"
+  }
+}
