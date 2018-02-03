@@ -3,7 +3,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const useragent = require('express-useragent');
 var app = express();
- 
+
+const port = process.env.PORT || 3000;
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use(useragent.express());
@@ -17,6 +19,6 @@ app.get('/api/whoami', function(req, res) {
     res.json({ip, language, software});
 });
 
-app.listen(3000, function(){
-    console.log("listening on port 3000")
+app.listen(port, function(){
+    console.log(`listening on port ${port}`)
 });
